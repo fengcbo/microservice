@@ -4,6 +4,13 @@ version '1.0'
 ext['springCloudVersion'] = 'Greenwich.M3'
 
 subprojects {
+//    apply plugin: 'idea'
+//    idea {
+//        module {
+//            downloadJavadoc = true
+//            downloadSources = true
+//        }
+//    }
     repositories {
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }

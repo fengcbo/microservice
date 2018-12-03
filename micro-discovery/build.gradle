@@ -15,7 +15,6 @@ buildscript {
 
 apply plugin: 'kotlin'
 apply plugin: 'kotlin-spring'
-apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
@@ -40,8 +39,10 @@ compileTestKotlin {
 
 dependencies {
 	implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+	implementation('org.springframework.boot:spring-boot-starter-web')
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation('com.fasterxml.jackson.module:jackson-module-kotlin:2.9.7')
 	implementation('javax.xml.bind:jaxb-api:2.3.0')
 	implementation('com.sun.xml.bind:jaxb-core:2.3.0.1')
 	implementation('com.sun.xml.bind:jaxb-impl:2.3.0.1')
