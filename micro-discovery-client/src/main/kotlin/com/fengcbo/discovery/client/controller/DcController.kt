@@ -1,4 +1,4 @@
-package com.fengcbo.discovery.controller
+package com.fengcbo.discovery.client.controller
 
 import org.springframework.cloud.client.discovery.DiscoveryClient
 import org.springframework.web.bind.annotation.GetMapping
